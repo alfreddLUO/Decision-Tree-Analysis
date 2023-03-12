@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<degree_spondylolisthesis &le; 15.925<br/>entropy = 1.492<br/>samples = 31<br/>value = [6, 10, 15]<br/>class = a>, fillcolor="#e1d0f9"] ;
+1 [label=<pelvic_radius &le; 117.205<br/>entropy = 0.954<br/>samples = 16<br/>value = [6, 10, 0]<br/>class = l>, fillcolor="#b0f5cd"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 0.0<br/>samples = 3<br/>value = [3, 0, 0]<br/>class = c>, fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label=<pelvic_tilt &le; 18.73<br/>entropy = 0.779<br/>samples = 13<br/>value = [3, 10, 0]<br/>class = l>, fillcolor="#74eda7"] ;
+1 -> 3 ;
+4 [label=<entropy = 0.439<br/>samples = 11<br/>value = [1, 10, 0]<br/>class = l>, fillcolor="#4de88e"] ;
+3 -> 4 ;
+5 [label=<entropy = 0.0<br/>samples = 2<br/>value = [2, 0, 0]<br/>class = c>, fillcolor="#e58139"] ;
+3 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 15<br/>value = [0, 0, 15]<br/>class = a>, fillcolor="#8139e5"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

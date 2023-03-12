@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<degree_spondylolisthesis &le; 16.08<br/>gini = 0.624<br/>samples = 248<br/>value = [48, 80, 120]<br/>class = a>, fillcolor="#e1d0f9"] ;
+1 [label=<pelvic_radius &le; 118.065<br/>gini = 0.51<br/>samples = 131<br/>value = [48, 78, 5]<br/>class = l>, fillcolor="#b7f6d1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<sacral_slope &le; 43.715<br/>gini = 0.541<br/>samples = 52<br/>value = [30, 18, 4]<br/>class = c>, fillcolor="#f6d3b9"] ;
+1 -> 2 ;
+3 [label=<gini = 0.411<br/>samples = 40<br/>value = [29, 10, 1]<br/>class = c>, fillcolor="#efaf82"] ;
+2 -> 3 ;
+4 [label=<gini = 0.486<br/>samples = 12<br/>value = [1, 8, 3]<br/>class = l>, fillcolor="#91f1b9"] ;
+2 -> 4 ;
+5 [label=<sacral_slope &le; 28.135<br/>gini = 0.371<br/>samples = 79<br/>value = [18, 60, 1]<br/>class = l>, fillcolor="#77eda8"] ;
+1 -> 5 ;
+6 [label=<gini = 0.475<br/>samples = 18<br/>value = [11, 7, 0]<br/>class = c>, fillcolor="#f6d1b7"] ;
+5 -> 6 ;
+7 [label=<gini = 0.232<br/>samples = 61<br/>value = [7, 53, 1]<br/>class = l>, fillcolor="#56e994"] ;
+5 -> 7 ;
+8 [label=<degree_spondylolisthesis &le; 31.25<br/>gini = 0.034<br/>samples = 117<br/>value = [0, 2, 115]<br/>class = a>, fillcolor="#833ce5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<degree_spondylolisthesis &le; 30.89<br/>gini = 0.133<br/>samples = 28<br/>value = [0, 2, 26]<br/>class = a>, fillcolor="#8b48e7"] ;
+8 -> 9 ;
+10 [label=<gini = 0.071<br/>samples = 27<br/>value = [0, 1, 26]<br/>class = a>, fillcolor="#8641e6"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = l>, fillcolor="#39e581"] ;
+9 -> 11 ;
+12 [label=<gini = 0.0<br/>samples = 89<br/>value = [0, 0, 89]<br/>class = a>, fillcolor="#8139e5"] ;
+8 -> 12 ;
+}
